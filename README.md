@@ -1,6 +1,6 @@
 # What is Redux?
 - a State Container that manage application state <b> separately </b>
 
-## Expanding the ESLint configuration
+## How Redux store works
 
-# react-redux-toolkit
+# Why Redux?

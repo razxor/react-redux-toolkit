@@ -1,5 +1,5 @@
 # What is Redux?
-- State Container 
+- a State Container that manage application state <b> separately </b>
 
 ## Expanding the ESLint configuration
 

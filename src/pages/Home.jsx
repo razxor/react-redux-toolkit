@@ -1,17 +1,16 @@
 'use strict'
 import React, { use, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-// import './App.css'
-import Counter from './components/Counter';
+import reactLogo from '../assets/react.svg'
+// import '../App.css'
+import Counter from '../components/Counter';
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment } from './features/counters/countersSlice'
-import Navbar from './components/Navbar'
-import { useTheme } from "./context/ThemeContext";
-import { setName } from "./features/user/userSlice";
-import Button from './components/Button';
+import { decrement, increment } from '../features/counters/countersSlice'
+import Navbar from '../components/Navbar'
+import { useTheme } from "../context/ThemeContext";
+import { setName } from "../features/user/userSlice";
+import Button from '../components/Button';
 
-function App() {
+function Home() {
   // const { theme, setTheme } = useTheme();
   const counters = useSelector((state) => state.counter);
   const dispatch = useDispatch();
@@ -34,7 +33,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+    
       <div className="w-3/5 mx-auto">
         <div className='my-10 flex justify-between items-center'>
           <h1 className="text-2xl font-bold">Hi, This is {userData.name}</h1>
@@ -58,4 +57,4 @@ function App() {
   )
 }
 
-export default App
+export default Home
